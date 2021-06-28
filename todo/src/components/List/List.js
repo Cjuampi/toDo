@@ -34,6 +34,12 @@ class List extends Component {
         this.addTarea({tarea})
     }
 
+    resetTarea = () => {
+        this.setState({todoList:data})
+    }
+
+    removeAllTareas = () => this.setState({todoList:[]})
+
     render(){
         return(
             <section>
@@ -41,9 +47,11 @@ class List extends Component {
                     <label >Tarea:</label><br/><br/>
                     <input type="text" id="tarea" name="tarea"/><br/><br/>
                     <input type="submit" value="Enviar"/>
-                </form>
+                </form><br></br>
+                <button type="button" onClick={this.resetTarea}>Reset Tarea</button><br></br>
+                <button type="button" onClick={this.removeAllTareas}>Clear Tareas</button>
                 {this.renderTareas()}
-                {[<p>hola</p>, <p>adiós</p>]}
+                
             </section>
         )
     }
