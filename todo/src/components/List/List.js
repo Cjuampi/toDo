@@ -14,7 +14,7 @@ class List extends Component {
     renderTareas = () => this.state.todoList
                             .map((tarea,i)=> {
                                 let keyValue = uuidv4();
-                                <Card key={keyValue} dataToCard={tarea} remove ={()=>this.removeOneProduct(keyValue)}/>
+                                return  <Card key={keyValue} dataToCard={tarea} remove ={()=>this.removeOneProduct(i)}/>
                             })
 
     addTarea = (tarea) =>{
