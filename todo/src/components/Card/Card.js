@@ -20,10 +20,8 @@ export default class Card extends Component {
         
         return (
             <div>
-                
-                <p>Tarea: {tarea || "no hay tarea"}</p>
-                <button onClick= {funcion}>Borrar tarea</button>
-                
+                <p id="tarea">Tarea: {tarea || "no hay tarea"}</p>
+                <button id="btn-remove" onClick= {funcion}>Borrar tarea</button>  
             </div>
         )
     }
