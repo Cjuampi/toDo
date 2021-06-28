@@ -1,4 +1,3 @@
-import Card from '../Card/Card'
 import List from '../List/List';
 import React, { Component } from 'react'
 
@@ -7,7 +6,7 @@ export default class Main extends Component {
         return (
             
             <main>       
-                <form >
+{/*                 <form >
                     <label >Nombre:</label><br/><br/>
                     <input type="text" id="name" name="name"/><br/><br/>
                     <input type="submit" value="ADD"/>
@@ -16,7 +15,8 @@ export default class Main extends Component {
                 <Card tarea={"Lavar" } funcion={ () => {}}/>
                 <Card tarea={"Reir"}/>
                 <Card tarea={"comer"}/>
-                <Card tarea={"Lavar"}/>
+                <Card tarea={"Lavar"}/> */}
+                <List />
             </main>
         )
     }
