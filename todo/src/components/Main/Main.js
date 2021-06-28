@@ -1,4 +1,5 @@
-import Formulario from '../Formulario/Formulario';
+import List from '../List/List';
+
 
 
 
@@ -8,7 +9,7 @@ export default class Main extends Component {
     render() {
         return (
             <main>
-                <Formulario/>
+                <List />
             </main>
         )
     }
