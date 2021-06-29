@@ -1,10 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './Header.scss';
 
 export default class header extends Component {
     render() {
         return (
-            <header>
-                <h1 id= "header-title">Aplicación Lista ToDo</h1>
+            <header className='Header'>
+                <div className="wrapper">
+                <h1>Aplicación Lista ToDo</h1>
+                </div>
             </header>
         )
     }

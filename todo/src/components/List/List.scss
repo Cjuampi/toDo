@@ -1,0 +1,15 @@
+@import '../../Sass/mixins';
+@import '../../Sass/colors';
+
+
+
+.sectionForm{
+    @include flex-column();
+   
+}
+
+.buttonsForm{
+    @include flex-row-space-between();
+    margin-top: 24px;
+    
+}

@@ -1,4 +1,4 @@
-import './Card.css'
+import './Card.scss'
 
 
 
@@ -11,9 +11,9 @@ export default class Card extends Component {
         let {tarea}  = this.props.dataToCard;
         console.log(this.props)
         return (
-            <div>
+            <div className='divCard'>
                 <p id="tarea">Tarea: {tarea || "no hay tarea"}</p>
-                <button id="btn-remove" onClick={this.props.remove} >Borrar tarea</button>  
+                <button className="btn-remove" onClick={this.props.remove} >Borrar tarea</button>  
             </div>
         )
     }

@@ -1,0 +1,66 @@
+@import './Sass/colors';
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$viewport-phone: 300px;
+$viewport-tablet: 564px;
+$viewport-desktop: 960px;
+
+.wrapper{
+  margin: 0 auto;
+  width: 100%;
+  background: $color-bg;
+}
+
+button{
+  border-radius: 24px;
+  padding: 8px;
+  box-shadow: 3px 3px 6px; 
+}
+
+p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+label{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-right: 16px;
+}
+
+input{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width:40vw;
+}
+
+input[type="submit"]{
+  border-radius: 24px;
+  padding: 8px;
+  box-shadow: 3px 3px 6px; 
+  width: 56px;
+  margin-left: 16px;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: $viewport-tablet +1px) and (max-width: $viewport-desktop +1px) {
+  .wrapper{
+    width: $viewport-tablet;
+    background-color: $color-bg
+  }
+}
+
+@media screen and (min-width: $viewport-desktop +1px) {
+  .wrapper{
+    width: $viewport-desktop;
+    background-color:$color-bg;
+  }
+}
