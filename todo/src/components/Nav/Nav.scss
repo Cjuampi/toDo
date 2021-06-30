@@ -1,0 +1,16 @@
+@import '../../Sass/mixins';
+.Nav{
+    width: 100%;
+    margin-left: 72px;
+    > ul{
+        list-style: none;
+        @include flex-row-space-between();
+        li{
+            text-indent: 0;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}

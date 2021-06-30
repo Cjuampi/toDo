@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Card from "../Card/Card";
+import Card from "../../components/Card/Card";
 import data from "../../todolist.json";
 import { v4 as uuidv4 } from "uuid";
 import "./List.scss";

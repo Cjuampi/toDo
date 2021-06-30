@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './Formulario.css';
+import './WeatherList.css';
 
-class Formulario extends Component {
+class WeatherList extends Component {
   // constructor(props){
     // super(props);
     // this.state = {};
@@ -23,4 +23,4 @@ class Formulario extends Component {
   }
 }
 
-export default Formulario;
+export default WeatherList;

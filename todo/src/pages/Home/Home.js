@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './Formulario.css';
+import './Home.css';
+import { Link } from 'react-router-dom';
 
-class Formulario extends Component {
+class Home extends Component {
   // constructor(props){
     // super(props);
     // this.state = {};
@@ -18,9 +19,12 @@ class Formulario extends Component {
 
   render() {
     return (
-      <div></div>
+      <div>
+        <h1>Bienvenido a mi web</h1>
+        <Link to="/todo"><button>ToDo List</button></Link>
+      </div>
     );
   }
 }
 
-export default Formulario;
+export default Home;

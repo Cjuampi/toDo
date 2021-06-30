@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './Formulario.css';
+import './WeatherCard.css';
 
-class Formulario extends Component {
+class WeatherCard extends Component {
   // constructor(props){
     // super(props);
     // this.state = {};
@@ -18,9 +18,12 @@ class Formulario extends Component {
 
   render() {
     return (
-      <div></div>
+      <div>
+        
+        
+      </div>
     );
   }
 }
 
-export default Formulario;
+export default WeatherCard;
