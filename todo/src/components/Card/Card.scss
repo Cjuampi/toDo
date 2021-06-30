@@ -1,0 +1,25 @@
+@import '../../Sass/mixins';
+
+
+.divCard{
+    @include flex-row-space-between();
+    align-items: baseline;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 80vw;
+    &:first-child{
+        border-top: 2px solid grey;
+        margin-top: 16px;
+
+    }
+
+    
+    >button{
+        border-radius: 24px;
+        padding: 8px;
+        box-shadow: 3px 3px 6px; 
+    }
+    
+
+}
